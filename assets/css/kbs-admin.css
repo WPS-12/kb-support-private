@@ -565,6 +565,10 @@ span.price_restricted:before {
 	padding: 4px 4px 4px 0;
 }
 
+body.wp-admin.wp-core-ui.post-type-kbs_ticket .alignleft.actions.bulkactions {
+    padding: 5px 0 5px 0;
+}
+
 /* Metabox Styles
 -------------------------------------------------------------- */
 #postbox-container-1 .kbs_fields_name_label {

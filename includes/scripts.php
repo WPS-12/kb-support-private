@@ -283,8 +283,11 @@ function kbs_load_admin_scripts( $hook ) {
 		$post_type = $post->post_type;
 	}
 
-	$kbs_cpt = array( 'kbs_ticket', 'article', 'kbs_form', 'kbs_company', 'kbs_log' );
-	if ( ! $post_type || ! in_array( $post_type, $kbs_cpt, true ) ) {
+	$kbs_cpt      = array( 'kbs_ticket', 'article', 'kbs_form', 'kbs_company', 'kbs_log' );
+	$screen       = get_current_screen();
+	$is_dashboard = is_object( $screen ) && $screen->id === 'dashboard';
+	// this can be loaded via admin dashboard, so we will need to check if it is the dasboard page, or right CPT.
+	if ( ! $is_dashboard && ( ! $post_type || ! in_array( $post_type, $kbs_cpt, true ) ) ) {
 		return;
 	}
 

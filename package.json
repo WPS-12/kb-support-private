@@ -1,10 +1,10 @@
 {
   "name": "kb-support",
   "description": "The ultimate help desk and knowledge base support tool plugin for WordPress",
-  "version": "1.5.90",
+  "version": "1.5.92",
   "main": "Gruntfile.js",
   "devDependencies": {
-    "grunt": "~1.5.3",
+    "grunt": "~1.6.1",
     "grunt-checktextdomain": "^1.0.1",
     "grunt-contrib-cssmin": "^1.0.2",
     "grunt-contrib-jshint": "^3.2.0",
@@ -13,7 +13,7 @@
     "grunt-contrib-watch": "^1.1.0",
     "grunt-glotpress": "^0.2.1",
     "grunt-potomo": "~3.4.0",
-    "grunt-rsync": "~0.2.1",
+    "grunt-rsync": "~0.4.0",
     "grunt-shell": "~0.6.1",
     "grunt-wp-i18n": "~1.0.3",
     "load-grunt-tasks": "^5.1.0"
